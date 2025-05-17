@@ -53,7 +53,7 @@ async function returnMovies(url) {
       const movieId = element.id; // TMDB movie ID
 
       try {
-        const response = await fetch('http://localhost:8002/api/v1/reviews', {
+        const response = await fetch('https://moviereviewbackend-v3b0.onrender.com/api/v1/reviews', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ async function loadReviews(movieId, container) {
   existingReviews.forEach((el) => el.remove());
 
   try {
-    const res = await fetch('http://localhost:8002/api/v1/reviews');
+    const res = await fetch('https://moviereviewbackend-v3b0.onrender.com/api/v1/reviews');
     const reviews = await res.json();
     const movieReviews = reviews.filter(
       (r) => r.movieId === movieId.toString()
