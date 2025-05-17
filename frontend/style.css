@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d122b;
+  font-family: sans-serif;
+}
+
+h3 {
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #0d122b;
+  padding: 10px;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1-2rem;
+  text-transform: uppercase;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+#form {
+  background-color: #060919;
+  width: 300px;
+  height: 43px;
+  display: flex;
+  border-radius: 11px;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 15px system-ui;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 6px 9px;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 350px;
+  border-radius: 19px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+}
+
+.card {
+  border-radius: 19px;
+  padding: 15px;
+  text-align: center;
+  background-color: #060919;
+}
+
+review-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review-form input,
+.review-form textarea {
+  border-radius: 6px;
+  border: none;
+  padding: 6px 9px;
+  font-size: 14px;
+  font-family: sans-serif;
+  resize: vertical;
+}
+
+.review-form button {
+  background-color: #2e5eff;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #1c3dcc;
+}
+
+.review-text {
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 4px;
+}
